@@ -11,7 +11,7 @@ const Header = ({ setListImages, setIsLoading }) => {
 
     try {
       setIsLoading(true);
-      const response = await fetch("http://localhost:5000/openai/images", {
+      const response = await fetch("https://dalle-backend-production.up.railway.app/openai/images", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
